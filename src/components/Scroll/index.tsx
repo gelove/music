@@ -88,13 +88,8 @@ const Scroll = forwardRef<scrollFunc, ScrollProps>((props, ref) => {
         top: bounceTop,
         bottom: bounceBottom,
       },
-      pullDownRefresh: pullDownLoading
-        ? {
-            threshold,
-            stop,
-          }
-        : false,
-      pullUpLoad: pullUpLoading,
+      pullDownRefresh: { threshold, stop },
+      pullUpLoad: pullUpLoading ? true : undefined,
       stopPropagation: stopPropagation,
     })
     setBScroll(scroll)
