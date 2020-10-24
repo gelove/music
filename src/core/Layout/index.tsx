@@ -29,7 +29,7 @@ function Layout({ route }: RouteConfigComponentProps) {
   return (
     <div>
       <div className={`${style['header']}`}>
-        <span>Cloud Music</span>
+        <span>Allen's Music</span>
         {currentSong.id ? (
           <MiniPlayer
             song={currentSong}
